@@ -40,7 +40,7 @@ class Game extends React.Component {
     }
 
     handleClick(i) {
-        if (this.state.winner || this.state.isDraw) {
+        if (this.state.winner || this.state.isDraw || this.state.squares[i]) {
             return;
         }
         const currentPlayer = this.state.nextPlayer;
